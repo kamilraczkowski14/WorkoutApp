@@ -23,6 +23,7 @@ namespace WorkoutApp.Middleware
             catch (ForbidException forbidException)
             {
                 context.Response.StatusCode = 403;
+                await context.Response.WriteAsync(forbidException.Message);
             }
             catch (Exception e)
             {
