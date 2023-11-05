@@ -5,8 +5,6 @@ namespace WorkoutApp.DAL
 {
     public class ApplicationDbContext : DbContext
     {
-        private string _connectionString =
-        "Server=(localdb)\\mssqllocaldb;Database=WorkoutApp;Trusted_Connection=True;";
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
         {
         }
